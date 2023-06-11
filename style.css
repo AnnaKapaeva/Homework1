@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+
+.top {
+    height: 1024px;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;  
+}
+
+.title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+padding-top: 217px;
+padding-left: 120px;
+padding-right: 531px;
+}
+
+.text {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 32px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+padding-top: 32px;
+padding-left: 120px;
+
+}
+
+.select {
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+
+}
+
+.button {
+position: absolute;
+width: 234.06px;
+height: 48.6px;
+background: #9C0332;
+border-radius: 30px;
+margin-top: 44px;
+margin-left: 120px;
+margin-right: 1086px;
+margin-bottom: 493px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+padding-top: 13px;
+padding-left: 74px;
+padding-right: 74px;
+padding-bottom: 13px;
+
+}
+
+.product {
+    display: flex; 
+    background:  #000915;;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.game_1 {
+    background-image: url(img/play1.jpg); 
+    width: 379px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.game_2 {
+    background-image: url(img/play2.jpg);
+    width: 378px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.game_3 {
+    background-image: url(img/play3.jpg);
+    width: 379px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.game_text {
+    position: absolute;
+    width: 79px;
+    height: 31.64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-top: 236px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 268px;
+}
