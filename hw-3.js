@@ -30,20 +30,20 @@ if (d > 100 || e > 100) {
  alert( Number(a) + Number(b));
  alert( +a + +b);
 
- // 5
- let month = prompt('Введите номер месяца');
+ // 5 что-то в коде не правильно, не пойму что?
+ let month = prompt ('Введите номер месяца');
  switch (month) {
     case 1 || 2 || 12:
-        console.log('Зима');
+        console.log('Зима')
         break;
     case 3 || 4 || 5:
-        console.log('Весна');
+        console.log('Весна')
         break;
     case 6 || 7 || 8:
-        console.log('Лето');
+        console.log('Лето')
         break;
     case 9 || 10 || 11:
-        console.log('Осень');
+        console.log('Осень')
         break;
     default: console.log('Такого месяца не существует')
         break;
