@@ -82,6 +82,11 @@ padding-bottom: 13px;
 
 }
 
+.button:hover {
+    color: black;
+    background-color: #ffffff;
+    }
+
 .product {
     display: flex; 
     background:  #000915;;
@@ -99,13 +104,23 @@ padding-bottom: 13px;
     width: 379px;
     height: 300px;
     border-radius: 16px;
+    transition: 1s; 
 }
+.game_1:hover {
+    transform: scale(1.15);
+}
+
+
 
 .game_2 {
     background-image: url(img/play2.jpg);
     width: 378px;
     height: 300px;
     border-radius: 16px;
+    transition: 1s;
+}
+.game_2:hover {
+    transform: scale(1.15);
 }
 
 .game_3 {
@@ -113,6 +128,10 @@ padding-bottom: 13px;
     width: 379px;
     height: 300px;
     border-radius: 16px;
+    transition: 1s;
+}
+.game_3:hover {
+    transform: scale(1.15);
 }
 
 .game_text {
@@ -131,4 +150,8 @@ padding-bottom: 13px;
     padding-left: 32px;
     padding-bottom: 32px;
     padding-right: 268px;
+}
+
+.game_text:hover {
+    color: gray;
 }
