@@ -1,14 +1,15 @@
 // __1__
 let a = 10;
 alert(a);
-alert(20);
+let a1 = 20
+alert(a1);
 
 // __2__
-let year = 2007;
+const year = 2007;
 alert(year);
 
 // __3__
-let name = "Брендан";
+const name = "Брендан";
 alert(name);
 
 // __4__
