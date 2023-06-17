@@ -1,7 +1,7 @@
 // 1
 let password = 'пароль';
 let leadpassword = prompt ('Введите пароль');
-if (leadpassword === 'пароль') {
+if (leadpassword === password) {
     alert('Пароль веден вверно');
 } else {
     alert('Пароль введен неправильно');
@@ -33,16 +33,24 @@ if (d > 100 || e > 100) {
  // 5 что-то в коде не правильно, не пойму что?
  let month = prompt ('Введите номер месяца');
  switch (month) {
-    case 1 || 2 || 12:
+    case 1:
+    case 2:
+    case 12:
         console.log('Зима')
         break;
-    case 3 || 4 || 5:
+    case 3:
+    case 4:
+    case 5:
         console.log('Весна')
         break;
-    case 6 || 7 || 8:
+    case 6:
+    case 7:
+    case 8:
         console.log('Лето')
         break;
-    case 9 || 10 || 11:
+    case 9:
+    case 10:
+    case 11:
         console.log('Осень')
         break;
     default: console.log('Такого месяца не существует')
