@@ -26,7 +26,7 @@ const obj = {
     "Петя" : '400' ,
 };
 for (let money in obj) {
-    console.log('{money} зарплата {obj[money]}');
+    console.log(`${money} зарплата ${obj[money]}`);
 }
 
 
