@@ -155,3 +155,49 @@ padding-bottom: 13px;
 .game_text:hover {
     color: gray;
 }
+
+.title_game {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    
+    padding-left: 120px;
+   
+}
+
+.text_game {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-left: 120px;
+    padding-top: 32px;
+}
+
+.game {
+    display: flex; 
+    background:  #000915;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+
+.top_game {
+    width: 584px;
+    height: 235px;
+    top: 1862px;
+    left: 120px;
+}
+
+.img_game {
+    width: 485px;
+    height: 333px;
+    background:  #000915;
+}
