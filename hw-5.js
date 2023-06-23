@@ -1,82 +1,72 @@
-// 1
+// // 1
 
-function min(a,b) {
-    if (a<b) {
-    return a;    
-    } else {
-    return b;  
-    }
-}
-min(4,7);
+// function min(a,b) {
+//     if (a<b) {
+//     return a;    
+//     } else {
+//     return b;  
+//     }
+// }
+// min(4,7);
 
-// 2
+// // 2
 
-function number() {
-    let parity = prompt(question);
-    if (prompt === n % 2 == 0) {
-        alert('число четное');
-    } else {
-        alert('число нечетное');
-    }
-}
+// function number() {
+//     let parity = prompt(question);
+//     if (prompt === n % 2 == 0) {
+//         alert('число четное');
+//     } else {
+//         alert('число нечетное');
+//     }
+// }
 
-// 3
+// // 3
 
-function result(с) {
-    let result = c*c;
-}
+// function result(с) {
+//     const i = c * 2;
+//     return i;
+// }
+// result (5);
 
-return result;
+// // 4
 
+// const age=prompt('Сколько вам лет?');
+// if (age<0) {
+//     console.log('Вы ввели неправильное значение');
+// } else if (age<=12) {
+//     console.log('Привет, Друг!');
+// } else {
+//     console.log('Добро пожаловать!');
+// }
 
-4
+// // 5
 
-let age = prompt("Сколько вам лет?");
-let printMessage;
+// function calculation(d,e) {
+//     if (isNaN(d) || isNaN(e)) {
+//         console.log('Одно или оба значения не являются числом');
+//     } else {
+//         console.log(d*e);
+//     }
+// }
 
-if (age <= 0) {
-    function printMessage() {
-        alert("Вы ввели неправильное значение");
-    }
-if (age < 12) {
-    function printMessage() {
-        alert("Привет друг!");
-    }
-} else {
-    function printMessage() {
-        alert("Добро пожаловать!");
-    }
-}
-printMessage();
+// calculation(9,10);
 
-// 5
+// 6 не поняла как сделать
 
-function calculation(d,e) {
-    if (isNaN(d) || isNaN(e)) {
-        console.log('Одно или оба значения не являются числом');
-    } else {
-        console.log(d*e);
-    }
-}
+// 7
 
-calculation(9,10);
+// const circle1 = {
+//     radius: 10,
+//     getArea() {
+//         return circle1.radius;
+//     }
+// };
+// console.log(circle1.getArea());
 
-6 не поняла как сделать
-
-7
-
-const circle1 = {
-    radius: 10,
-    getArea() {
-        return circle1.radius;
-    }
-};
-console.log(circle1.getArea());
-
-const circle2 = {
-    radius: 20,
-    getPerimetr() {
-        return circle2.radius;
-    }
-};
-console.log(circle2.getPerimetr());
+// const circle2 = {
+//     radius: 20,
+//     getPerimetr() {
+//         return circle2.radius;
+//     }
+// };
+// console.log(circle2.getPerimetr());
