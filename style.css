@@ -49,7 +49,7 @@ padding-left: 120px;
 
 }
 
-.select {
+.span {
 font-family: Montserrat;
 font-size: 18px;
 font-weight: 700;
@@ -183,9 +183,9 @@ padding-bottom: 13px;
 
 .game {
     display: flex; 
-    background:  #000915;
+    background:  #000915;;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     gap: 32px;
 }
 
@@ -200,4 +200,5 @@ padding-bottom: 13px;
     width: 485px;
     height: 333px;
     background:  #000915;
+    padding-right: 120px;
 }
