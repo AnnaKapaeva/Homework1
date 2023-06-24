@@ -11,12 +11,13 @@ min(4,7);
 
 // 2
 
-function number() {
-    let parity = prompt(question);
-    if (prompt === n % 2 == 0) {
-        alert('число четное');
+function parity(num) {
+    let first = ('число четное');
+    let second = ('число нечетное');
+    if (num === n % 2 == 0) {
+        return first;
     } else {
-        alert('число нечетное');
+        return second;
     }
 }
 
@@ -26,7 +27,7 @@ function result(с) {
     const i = c * 2;
     return i;
 }
-result (5);
+
 
 // 4
 
@@ -51,24 +52,36 @@ function calculation(d,e) {
 
 calculation(9,10);
 
-6 не поняла как сделать
+// 6 не поняла как сделать
 
-7
+// 7
+
+function getRectangArea() {
+    return this.radius * this.n * 2;
+}
+function getRectangPerimetr() {
+    return this.radius * this.n * 2;
+}
 
 const circle1 = {
-    radius: 10,
-    getArea() {
-        return circle1.radius;
-    }
+    radius: 4,
+    n: 3.14,
+
+    getArea: getRectangArea,
+    getPerimetr: getRectangPerimetr,
 };
-console.log(circle1.getArea());
 
 const circle2 = {
-    radius: 20,
-    getPerimetr() {
-        return circle2.radius;
-    }
+    radius: 5,
+    n: 3.14,
+
+    getArea: getRectangArea,
+    getPerimetr: getRectangPerimetr,
 };
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimetr());
+console.log(circle2.getArea());
 console.log(circle2.getPerimetr());
 
 // 8
@@ -76,13 +89,13 @@ console.log(circle2.getPerimetr());
 function showTextButton() {
     let userAnswer = prompt('Введите номер месяца');
 
-    if (userAnswer === 12 || 1 || 2) {
+    if (user === 12) || (user === 1) || (user === 2) {
         alert('Зима');
-    } else if (userAnswer === 3 || 4 || 5) {
+    } else if (user === 3) || (user === 4) || (user === 5) {
         alert('Весна');
-    } else if (userAnswer === 6 || 7 || 9) {
+    } else if (user === 6) || (user === 7) || (user === 8) {
         alert('Лето');  
-    } else if (userAnswer === 9 || 10 || 11) {
+    } else if (user === 9) || (user === 10) || (user === 11) {
         alert('Осень'); 
     } else {
         alert('Такого месяца не существует');
