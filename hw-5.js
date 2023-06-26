@@ -14,7 +14,7 @@ min(4,7);
 function parity(num) {
     let first = ('число четное');
     let second = ('число нечетное');
-    if (num === n % 2 == 0) {
+    if (num % 2 == 0) {
         return first;
     } else {
         return second;
@@ -87,15 +87,15 @@ console.log(circle2.getPerimetr());
 // 8
 
 function showTextButton() {
-    let userAnswer = prompt('Введите номер месяца');
+    let user = prompt('Введите номер месяца');
 
-    if (user === 12) || (user === 1) || (user === 2) {
+    if ((user === 12) || (user === 1) || (user === 2)) {
         alert('Зима');
-    } else if (user === 3) || (user === 4) || (user === 5) {
+    } else if ((user === 3) || (user === 4) || (user === 5)) {
         alert('Весна');
-    } else if (user === 6) || (user === 7) || (user === 8) {
+    } else if ((user === 6) || (user === 7) || (user === 8)) {
         alert('Лето');  
-    } else if (user === 9) || (user === 10) || (user === 11) {
+    } else if ((user === 9) || (user === 10) || (user === 11)) {
         alert('Осень'); 
     } else {
         alert('Такого месяца не существует');
