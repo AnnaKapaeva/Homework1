@@ -64,6 +64,10 @@ function getRandomArrNumbers(length = Math.floor(number/2)) {
 }
 
 // 7
+const random = (a, b) => {
+    return Math.floor(Math.random() * (a - b + 1)) + b;
+}
+console.log(random(4, 23));
 
 // 8
 let currentDateNow = new Date();
