@@ -79,5 +79,13 @@ console.log(currentDate);
 currentDate.setDate(73);
 console.log(currentDate);
 
+// 10
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
+let date = new Date();
+let fullDate = "Дата: " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear() + " - это день недели " + days[date.getDay()];
+console.log(fullDate);
 
+let fullTime = "Время: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+console.log(fullTime);
