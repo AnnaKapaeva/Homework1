@@ -73,7 +73,7 @@ console.log(random(4, 23));
 let currentDateNow = new Date();
 console.log(currentDateNow); 
 
-let myDate = new Date("07/02/2023");
+let myDate = new Date("07/03/2023");
 console.log(myDate);
 
 // 9
@@ -93,3 +93,21 @@ console.log(fullDate);
 
 let fullTime = "Время: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 console.log(fullTime);
+
+// 11
+function game() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort(() => Math.random() - 0.5);
+}
+
+alert("Ответь на вопросы");
+let a = prompt('Чему равнялся первый элемент массива?');
+let b = prompt('Чему равнялся последний элемент массива?');
+if (a==0 || b==1) {
+    alert('Поздравляю, вы угадали оба ответа!');
+} else if (a!==0 || b==1, a==0 || b!==1) {
+    alert('Вы были близки к победе!');
+} else if (a!==0 || b!==1, a!==0 || b!==1) {
+    alert('Вы ответили неерн!');
+}
+

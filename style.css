@@ -22,64 +22,61 @@ a {
 }
 
 .title {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 78px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-padding-top: 217px;
-padding-left: 120px;
-padding-right: 531px;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-top: 217px;
+    padding-left: 120px;
+    padding-right: 531px;
 }
 
 .text {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 32px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-padding-top: 32px;
-padding-left: 120px;
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-top: 32px;
+    padding-left: 120px;
 }
 
 .span {
-font-family: Montserrat;
-font-size: 18px;
-font-weight: 700;
-
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .button {
-position: absolute;
-width: 234.06px;
-height: 48.6px;
-background: #9C0332;
-border-radius: 30px;
-margin-top: 44px;
-margin-left: 120px;
-margin-right: 1086px;
-margin-bottom: 493px;
+    position: absolute;
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    margin-top: 44px;
+    margin-left: 120px;
+    margin-right: 1086px;
+    margin-bottom: 493px;
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-padding-top: 13px;
-padding-left: 74px;
-padding-right: 74px;
-padding-bottom: 13px;
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-top: 13px;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 13px;
 }
 
 .button:hover {
@@ -97,6 +94,7 @@ padding-bottom: 13px;
     padding-bottom: 128px;
     padding-left: 120px;
     padding-right: 120px;
+    height: 556px;
 }
 
 .game_1 {
@@ -187,6 +185,8 @@ padding-bottom: 13px;
     flex-direction: row;
     justify-content: space-around;
     gap: 32px;
+    height: 800px;
+
 }
 
 .top_game {
@@ -201,4 +201,10 @@ padding-bottom: 13px;
     height: 333px;
     background:  #000915;
     padding-right: 120px;
+}
+
+.img_game_2  {
+    width: 481px;
+    height: 322px;
+    padding-left: 120px
 }
