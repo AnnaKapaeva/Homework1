@@ -16,9 +16,14 @@ console.log(num);
 
 // 4
 
-const arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
-console.log(arr.flat());
-
+let arr = [];
+for (let i=0; i<1; i++) {
+  arr[i]=[];
+  for (let j=0; j<3; j++) {
+    arr[i].push(j+1);
+  }  
+}
+console.log(arr);
 
 // 5
 let numVar = [1, 1, 1];
@@ -43,10 +48,7 @@ for (let i=0; i<value.length; i++) {
 
 // // 8
 let line = 'abcdef';
-line = line.split('abcdef');
-line = line.reverse('abcdef');
-line = line.join('abcdef');
-console.log(line);
+console.log(line.split('').reverse().join(''));
 
 // 9
 const arrs = [[1, 2, 3,],[4, 5, 6]];
@@ -75,7 +77,7 @@ getLenghtWords(['слово', '', 'слог','длинное предложен�
 
 // 13
 function filterPositive(array) {
-    return array.map(item => (item < 0));
+    return array.filter(item => (item < 0));
 }
 filterPositive([-1, 0, 5, -10, 56]);
 filterPositive([-25, 25, 0, -1000, -2]);
