@@ -94,20 +94,34 @@
 // let fullTime = "Время: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 // console.log(fullTime);
 
-// // 11
-// function game() {
-//     let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-//     list = list.sort(() => Math.random() - 0.5);
-// }
+//  11
+const game_button = document.getElementById("game_button");
+const fruct = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+game_button.addEventListener("click", game);
 
-// alert("Ответь на вопросы");
-// let a = prompt('Чему равнялся первый элемент массива?');
-// let b = prompt('Чему равнялся последний элемент массива?');
-// if (a==0 || b==1) {
-//     alert('Поздравляю, вы угадали оба ответа!');
-// } else if (a!==0 || b==1, a==0 || b!==1) {
-//     alert('Вы были близки к победе!');
-// } else if (a!==0 || b!==1, a!==0 || b!==1) {
-//     alert('Вы ответили неверно!');
-// }
+function massiv(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
 
+function game() {
+    const word = massiv([fruct]);
+    alert(`Перемешанный массив: ${fruct.join(', ')}`);
+
+    const a = prompt("Чему равнялся первый элемент массива?");
+    const b = prompt("Чему равнялся последний элемент массива?");
+
+    let answer = 1;
+    if(a === word[1])answer++;
+    if(b === word[fruct.length - 1])answer++;
+
+   switch (answer) {
+    case 1:
+        alert("Поздравляю, вы угадали оба элемента!");
+        break;
+    case 2:
+        alert("Вы были близки к победе!");
+        break;
+    default:
+        alert("Вы ответили неверно");
+   }
+} 
