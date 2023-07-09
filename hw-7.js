@@ -28,6 +28,9 @@
 //     }
 // })
 
+const product = ['яблоко', 'груша', 'гриб', 'огурец'];
+console.log(/гру/.test(product));  //если я правильно поняла, то это решается с помощью регулярных выражений? Но я не могу понять, как вывести в консоль не true, а именно слово.
+ 
 // // 3
 
 // function getRandom1(Value) {
@@ -94,7 +97,7 @@
 // let fullTime = "Время: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 // console.log(fullTime);
 
-//  11
+ 11
 const game_button = document.getElementById("game_button");
 const fruct = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 game_button.addEventListener("click", game);
@@ -104,24 +107,30 @@ function massiv(array) {
 }
 
 function game() {
-    const word = massiv([fruct]);
+    const word = massiv([...fruct]);
     alert(`Перемешанный массив: ${fruct.join(', ')}`);
 
     const a = prompt("Чему равнялся первый элемент массива?");
     const b = prompt("Чему равнялся последний элемент массива?");
 
     let answer = 1;
-    if(a === word[1])answer++;
-    if(b === word[fruct.length - 1])answer++;
+    if(a === word[1]) answer++;
+    if(b === word[word.length - 1]) answer++;
 
    switch (answer) {
     case 1:
+    case 7:
         alert("Поздравляю, вы угадали оба элемента!");
         break;
+    case 1:
     case 2:
+    case 3: 
+    case 4:
+    case 5: 
+    case 6: 
         alert("Вы были близки к победе!");
         break;
     default:
         alert("Вы ответили неверно");
    }
-} 
+}   //нужна помощь, не могу разобраться с этой задачей.
