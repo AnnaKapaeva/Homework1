@@ -19,6 +19,10 @@
 //         console.log(product);
 //     }
 // })
+function searchStart(array, string) {
+ return array.includes(string);
+}
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
 
 // const building = ['Дом', 'Банк', 'Больница', 'Театр'];
 // const search2 = 'Кино';
@@ -28,8 +32,6 @@
 //     }
 // })
 
-const product = ['яблоко', 'груша', 'гриб', 'огурец'];
-console.log(/гру/.test(product));  //если я правильно поняла, то это решается с помощью регулярных выражений? Но я не могу понять, как вывести в консоль не true, а именно слово.
  
 // // 3
 
@@ -113,21 +115,15 @@ function game() {
     const a = prompt("Чему равнялся первый элемент массива?");
     const b = prompt("Чему равнялся последний элемент массива?");
 
-    let answer = 1;
-    if(a === word[1]) answer++;
-    if(b === word[word.length - 1]) answer++;
+    let answer=1;
+    a === word[0];
+    b === word[word.length - 1], answer++;
 
    switch (answer) {
-    case 1:
-    case 7:
+    case 2:
         alert("Поздравляю, вы угадали оба элемента!");
         break;
-    case 1:
-    case 2:
-    case 3: 
-    case 4:
-    case 5: 
-    case 6: 
+    case 1: 
         alert("Вы были близки к победе!");
         break;
     default:
