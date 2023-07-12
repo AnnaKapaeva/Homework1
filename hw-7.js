@@ -110,23 +110,25 @@ function massiv(array) {
 
 function game() {
     const word = massiv([...fruct]);
-    alert(`Перемешанный массив: ${fruct.join(', ')}`);
+    alert(`Перемешанный массив: ${word.join(', ')}`);
 
     const a = prompt("Чему равнялся первый элемент массива?");
     const b = prompt("Чему равнялся последний элемент массива?");
 
-    let answer = 1;
+    let answer = 0;
     if(a === word[0]) answer++;
     if(b === word[word.length - 1]) answer++;
 
-   switch (answer) {
-    case 2:
-        alert("Поздравляю, вы угадали оба элемента!");
-        break;
-    case 1:
-        alert("Вы были близки к победе!");
-        break;
-    default:
-        alert("Вы ответили неверно");
-   }
-}   //нужна помощь, не могу разобраться с этой задачей.
+    switch (answer) {
+        case 1:
+          alert("Вы были близки к победе!");
+          break;
+       case 2:
+           alert("Поздравляю, вы угадали оба элемента!");
+           break;
+       default:
+           alert("Вы ответили неверно");
+      }
+}   
+
+
