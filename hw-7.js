@@ -19,10 +19,13 @@
 //         console.log(product);
 //     }
 // })
-function searchStart(array, string) {
- return array.includes(string);
-}
-console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+
+
+// function searchStart(array, string) {
+//  return array.includes(string);
+// }
+// console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+
 
 // const building = ['Дом', 'Банк', 'Больница', 'Театр'];
 // const search2 = 'Кино';
@@ -99,36 +102,36 @@ console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог']
 // let fullTime = "Время: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 // console.log(fullTime);
 
- 11
-const game_button = document.getElementById("game_button");
-const fruct = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-game_button.addEventListener("click", game);
+//  11
+// const game_button = document.getElementById("game_button");
+// const fruct = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+// game_button.addEventListener("click", game);
 
-function massiv(array) {
-    return array.sort(() => Math.random() - 0.5);
-}
+// function massiv(array) {
+//     return array.sort(() => Math.random() - 0.5);
+// }
 
-function game() {
-    const word = massiv([...fruct]);
-    alert(`Перемешанный массив: ${word.join(', ')}`);
+// function game() {
+//     const word = massiv([...fruct]);
+//     alert(`Перемешанный массив: ${word.join(', ')}`);
 
-    const a = prompt("Чему равнялся первый элемент массива?");
-    const b = prompt("Чему равнялся последний элемент массива?");
+//     const a = prompt("Чему равнялся первый элемент массива?");
+//     const b = prompt("Чему равнялся последний элемент массива?");
 
-    let answer = 0;
-    if(a === word[0]) answer++;
-    if(b === word[word.length - 1]) answer++;
+//     let answer = 0;
+//     if(a === word[0]) answer++;
+//     if(b === word[word.length - 1]) answer++;
 
-    switch (answer) {
-        case 1:
-          alert("Вы были близки к победе!");
-          break;
-       case 2:
-           alert("Поздравляю, вы угадали оба элемента!");
-           break;
-       default:
-           alert("Вы ответили неверно");
-      }
-}   
+//     switch (answer) {
+//         case 1:
+//           alert("Вы были близки к победе!");
+//           break;
+//        case 2:
+//            alert("Поздравляю, вы угадали оба элемента!");
+//            break;
+//        default:
+//            alert("Вы ответили неверно");
+//       }
+// }   
 
 
